@@ -61,7 +61,7 @@ class ALU
              bitset<32> ALUresult;
              bitset<32> ALUOperation (bitset<3> ALUOP, bitset<32> oprand1, bitset<32> oprand2)
              {   
-                 // implement the ALU operations by you. 
+                 // implement the ALU operations 
 				 if(ALUOP.to_ulong() ==ADDU)
 				{
 					ALUresult = oprand1.to_ulong() + oprand2.to_ulong();
@@ -112,7 +112,7 @@ class INSMem
                   
           bitset<32> ReadMemory (bitset<32> ReadAddress) 
               {    
-               // implement by you. (Read the byte at the ReadAddress and the following three byte).
+               // Read the byte at the ReadAddress and the following three byte
 			   string tempInst;
 			   for(int j = 0; j < 4; j++)
 			   {
@@ -153,7 +153,7 @@ class DataMem
           }  
           bitset<32> MemoryAccess (bitset<32> Address, bitset<32> WriteData, bitset<1> readmem, bitset<1> writemem) 
           {                   
-               // implement by you.
+               // memory access, read from Mem
 			   if(readmem.to_ulong() ==1)
 			   {
 					string tempReadData;

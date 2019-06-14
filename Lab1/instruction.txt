@@ -1,0 +1,49 @@
+pc0:
+lw r0,r1,0
+
+pc4:
+lw r0,r2,4
+
+pc8:
+addu r1,r2,r3
+
+pc12:
+subu r1,r2,r4
+
+pc16:
+and r1,r2,r5
+
+pc20:
+or r1,r2,r6
+
+pc24:
+nor r1,r2,r7
+
+pc28:
+j to 36
+
+pc32:
+sw r0,r1,8
+
+pc36:
+beq r1,r6,2:pc=pc+4+8=48
+
+pc40:
+sw r0,r1,8
+
+//pc44:
+addiu:r7,r8,1
+
+pc48:
+sw r0,r8,8
+
+pc52:
+addu r0,r0,r0
+
+pc56:
+addu r0,r0,r0
+
+pc60:
+halt
+
+
